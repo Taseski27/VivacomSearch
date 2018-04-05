@@ -13,11 +13,6 @@ namespace VivacomSearch.Controllers
     {
         IFileOperations theFileOperations = null;
 
-        public HomeController()
-        {
-            theFileOperations = new FileOperations();
-        }
-
         public HomeController(IFileOperations fileOperations)
         {
             theFileOperations = fileOperations;

@@ -18,7 +18,7 @@ namespace VivacomSearch
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            UnityConfig.RegisterTypes(UnityConfig.Container);
+            UnityConfig.RegisterComponents();
         }
     }
 }
