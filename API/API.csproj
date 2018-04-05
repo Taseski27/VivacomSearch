@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,7 +44,6 @@
     <Compile Include="Entities\File.cs" />
     <Compile Include="Entities\Folder.cs" />
     <Compile Include="Entities\MatchDetails.cs" />
-    <Compile Include="Helpers\ParseHelper.cs" />
     <Compile Include="Implementations\FileOperations.cs" />
     <Compile Include="Interfaces\IFileOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

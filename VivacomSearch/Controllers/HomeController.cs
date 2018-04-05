@@ -15,7 +15,7 @@ namespace VivacomSearch.Controllers
 
         public HomeController()
         {
-
+            theFileOperations = new FileOperations();
         }
 
         public HomeController(IFileOperations fileOperations)
@@ -25,9 +25,15 @@ namespace VivacomSearch.Controllers
 
         public ActionResult Index()
         {
-            theFileOperations = new FileOperations();
             IEnumerable<Folder> directories = theFileOperations.GetLocations(Server.MapPath("~/Logs"));
             return View(directories);
+        }
+
+        [HttpPost]
+        public ActionResult FindPID(string path, string lineNumber)
+        {
+            string result = theFileOperations.FindPID(path, Int32.Parse(lineNumber));
+            return PartialView("Details", result);
         }
     }
 }
