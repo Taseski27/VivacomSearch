@@ -1,4 +1,7 @@
-﻿using System;
+﻿using API.Entities;
+using API.Implementations;
+using API.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,23 +11,23 @@ namespace VivacomSearch.Controllers
 {
     public class HomeController : Controller
     {
+        IFileOperations theFileOperations = null;
+
+        public HomeController()
+        {
+
+        }
+
+        public HomeController(IFileOperations fileOperations)
+        {
+            theFileOperations = fileOperations;
+        }
+
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            theFileOperations = new FileOperations();
+            IEnumerable<Folder> directories = theFileOperations.GetLocations(Server.MapPath("~/Logs"));
+            return View(directories);
         }
     }
 }

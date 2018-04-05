@@ -18,6 +18,12 @@ namespace VivacomSearch
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "PID",
+                url: "viva/Results/{action}/{id}",
+                defaults: new { controller = "Home", action = "GetPid", id = UrlParameter.Optional }
+            );
         }
     }
 }

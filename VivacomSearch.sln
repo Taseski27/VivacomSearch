@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VivacomSearch", "VivacomSearch\VivacomSearch.csproj", "{3226EC11-3D40-455E-A7BA-110A0460A8CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{FC26266E-50B0-4C76-9147-00B3C6D20746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3226EC11-3D40-455E-A7BA-110A0460A8CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3226EC11-3D40-455E-A7BA-110A0460A8CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3226EC11-3D40-455E-A7BA-110A0460A8CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC26266E-50B0-4C76-9147-00B3C6D20746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC26266E-50B0-4C76-9147-00B3C6D20746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC26266E-50B0-4C76-9147-00B3C6D20746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC26266E-50B0-4C76-9147-00B3C6D20746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
